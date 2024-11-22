@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Template 1</title>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="company logo" id="logo">
+            </div>
+            <div class="pages">
+                <a href="" id="page-item">Sign Up</a>
+                <a href="" id="page-item">How it Works</a>
+                <a href="" id="page-item">Meet the Creators</a>
+            </div>
+        </nav>
+        <!-- ------------------------ -->
+        <section id="hero">
+            <!-- form + text on left fades into image on right -->
+            <div class="headline">
+                <h1>SaaS product</h1>
+                <h2>2nd Title</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Laboriosam neque ea quos, minima tenetur doloremque enim cum debitis! 
+                    Dicta illum nobis fuga nulla quo doloremque, esse veniam repudiandae recusandae temporibus!
+                </p>
+            </div>
+            <div class="form header-form">
+                <form id="webhookForm">
+                    <input type="text" name="name" id="name" placeholder="Your Name" required>
+                    <input type="email" name="email" id="email" placeholder="Your Email" required>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+        <section class="features" id="features">
+            <h2>How {{title}} works</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Laboriosam neque ea quos, minima tenetur doloremque enim cum debitis! 
+            </p>
+            <div class="features-boxes">
+                <div id="feature-item">
+                    <img src="" alt="">
+                    <h3><span>first word</span> following description of feature</h3>
+                </div>
+                <div id="feature-item">
+                    <img src="" alt="">
+                    <h3><span>first word</span> following description of feature</h3>
+                </div>
+                <div id="feature-item">
+                    <img src="" alt="">
+                    <h3><span>first word</span> following description of feature</h3>
+                </div>
+                <div id="feature-item">
+                    <img src="" alt="">
+                    <h3><span>first word</span> following description of feature</h3>
+                </div>
+                <div id="feature-item">
+                    <img src="" alt="">
+                    <h3><span>first word</span> following description of feature</h3>
+                </div>
+                <div id="feature-item">
+                    <img src="" alt="">
+                    <h3><span>first word</span> following description of feature</h3>
+                </div>
+            </div>
+        </section>
+        <section class="video-cta">
+            <!-- fix video id -->
+            <h2>Still Curious?</h2>
+            <p>Watch our video to learn more about {{title}}.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        </section>
+        <section class="Info">
+            <!-- text on right fades into image on left -->
+            <div class="info-1">
+                <h2>Feature 1</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Laboriosam neque ea quos, minima tenetur doloremque enim cum debitis! 
+                    Dicta illum nobis fuga nulla quo doloremque, esse veniam repudiandae recusandae temporibus!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Laboriosam neque ea quos, minima tenetur doloremque enim cum debitis! 
+                    Dicta illum nobis fuga nulla quo doloremque, esse veniam repudiandae recusandae temporibus!
+                </p>
+            </div>
+            <!-- text on left fades into image on right -->
+            <div class="info-2">
+                <h2>Feature 2</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Laboriosam neque ea quos, minima tenetur doloremque enim cum debitis! 
+                    Dicta illum nobis fuga nulla quo doloremque, esse veniam repudiandae recusandae temporibus!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Laboriosam neque ea quos, minima tenetur doloremque enim cum debitis! 
+                    Dicta illum nobis fuga nulla quo doloremque, esse veniam repudiandae recusandae temporibus!
+                </p>
+            </div>
+        </section>
+        <section class="testimonials">
+            <h2>What People are saying</h2>
+            <div>
+                <button onclick="testimonial_prev()">
+                    <
+                </button>
+            </div>
+            <div class="testimonial-item">
+                <h3 id="testimonial-name"></h3>
+                <p id="testimonial-position"></p>
+                <p id="testimonial-text"></p>
+            </div>
+            <div>
+                <button onclick="testimonial_next()">
+                    >
+                </button>
+            </div>
+        </section>
+        <section class="cta">
+            <h1>write your Saas' main selling point <span>Here</span></h1>
+            <p>a bit more of an explaination</p>
+            <button href="#hero">Get Started</button>
+        </section>
+        <section class="faq">
+            <h2>Frequently asked questions</h2>
+            <p>Everything you need to know about {{Title}}</p>
+            <details>
+                <summary>Is there a free trial available?</summary>
+                <p>Yes, we offer a 14-day free trial for new users. You can explore all features without any commitment. No credit card is required to sign up.</p>
+            </details>
+            
+            <details>
+                <summary>Can I change my plan later?</summary>
+                <p>Absolutely! You can upgrade or downgrade your plan at any time through your account settings. Any changes will take effect at the end of your current billing cycle.</p>
+            </details>
+            
+            <details>
+                <summary>What is the refund policy?</summary>
+                <p>If you are not satisfied with your purchase, we offer a 30-day money-back guarantee. Please contact our support team within 30 days of your purchase for a full refund.</p>
+            </details>
+            
+            <details>
+                <summary>How do I cancel my subscription?</summary>
+                <p>You can cancel your subscription at any time by going to your account settings and selecting the cancellation option. Your subscription will remain active until the end of the current billing period.</p>
+            </details>
+            
+            <details>
+                <summary>Can I change my account's email?</summary>
+                <p>Yes, you can change your account email address by accessing the account settings. Just enter your new email address and follow the verification steps.</p>
+            </details>
+            
+            <details>
+                <summary>How does billing work?</summary>
+                <p>Billing is processed on a monthly or annual basis, depending on the plan you choose. You will receive an invoice via email for each billing cycle.</p>
+            </details>
+        </section>
+        <section class="contact-us">
+            <div class="contact" id="contact-form">
+                <h1 id="contact-title">Still have questions?</h1>
+                <p id="">Cant find the answer youre looking for? We're here to help!</p>
+                <button onclick="contact_form_btn()">Contact Us</button>
+                <div class="contact-form" id="contact-form">
+                    <form id="contactEmailForm" action="YOUR_EMAIL_ENDPOINT" method="POST">
+                        <input type="text" name="name" id="contact-name" placeholder="Your Name" required>
+                        <input type="email" name="email" id="contact-email" placeholder="Your Email" required>
+                        <textarea name="message" id="contact-message" placeholder="Your Message" rows="5" required></textarea>
+                        <input type="submit" value="Send Message">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="footer-top">
+            <div class="footer-top-left">
+                <ul>
+                    <li>Follow Us</li>
+                    <li><i></i></li>
+                    <li><i></i></li>
+                    <li><i></i></li>
+                    <li><i></i></li>
+                </ul>
+            </div>
+            <div class="footer-top-right">
+                <p>Made by <a href="">Design & Deploy <i></i></a></p>
+            </div>
+        </div>
+        <div class="footer-btm">
+            <div class="footer-btm-left">
+                <ul>
+                    <li>
+                        <a href="#header">
+                            <img src="assets/images/logo.png" alt="company logo" id="logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#features">Features</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-btm-right">
+                <p>&copy;<span id="current-year"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
