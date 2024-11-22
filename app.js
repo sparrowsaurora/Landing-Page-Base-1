@@ -3,7 +3,7 @@ document.getElementById('webhookForm').addEventListener('submit', function(event
     console.log("1");
     const formData = new FormData(this); // Get the form data
     console.log("2");
-    fetch('https://hook.eu2.make.com/d17wj9qjqvyyow02vqh6sitq4g4mz6du', { // Replace with your webhook URL
+    fetch('https://hook.eu2.make.com/i969kf5fdprowfri9k8fgbxcxxwn6892', { // Replace with your webhook URL
         method: 'POST',
         body: formData,
     })
